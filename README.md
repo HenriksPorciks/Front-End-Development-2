@@ -32,18 +32,18 @@ Focus op Responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-RMMD Project (?)
+BNO 
+Landingspagina + Iteratie op Over Ons
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+BNO Landingspagina 
+<img src="images/www.bno.nl_.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+BNO Over Ons
+<img src="images/www.bno.nl_over-ons.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
-
 
 
 
