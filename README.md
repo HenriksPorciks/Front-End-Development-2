@@ -43,6 +43,45 @@ BNO Landingspagina
 BNO Over Ons
 <img src="images/www.bno.nl_over-ons.png" width="375px" alt="omschrijving van de pagina">
  
+### Toegankelijkheidstest resultaten:
+ADHD
+
+Navigatie slecht 
+text groot
+weinig context eerst
+
+
+Tunnelvisie:
+Zoeken in menu / weinig contrast
+
+grote text, fijn
+moeilijk te lezen
+van dichtbij is het te lezen
+muis vinden moeilijk
+Externe dingen echt te klein niet leesbaar
+
+parkinson
+
+menu moeilijk , knoppen klein en moeilijk te raken 
+actie diep begraven
+(standaard defualt afganistan why)
+
+
+TABBEN
+
+Skipt over headers
+geeen focus bij tabben je ziet niet waar je bent selctie is niet outlined
+
+foto link n iet selected zichtbaar
+outline niet volledig
+
+IDEA: skip to content for tabb
+
+
+Darkmode afwezig
+
+
+
 </details>
 
 
@@ -51,7 +90,7 @@ BNO Over Ons
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
+<summary>https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3A1</summary>
 
 ### de hele pagina: 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
