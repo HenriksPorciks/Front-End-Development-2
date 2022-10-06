@@ -113,7 +113,7 @@
   }
     
   nav a {
-    color: 
+    color: var(--color-link-dark-bg);
   }
   nav h2 {
     color: var(--color-link-dark-bg);
@@ -134,7 +134,7 @@
     flex-wrap: warp;
     justify-content: center;
     gap: 2em;
-    */
+ 
     
     
     
