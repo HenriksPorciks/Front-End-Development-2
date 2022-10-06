@@ -1,5 +1,181 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
+  /***********/
+  /* ROOT VAR */
+  /***********/
 
+  :root {
+    /* HET KLEURENPALET */
+    --color-text:#212529;
+    --color-background:#FFFFFF;
+    --color-text-dark-bg:#FFFFFF;
+    --color-button-background:#000000;
+    --color-button-submit-text:#FFFFFF;
+    
+   --color-link-light-bg:#000000;
+   --color-link-dark-bg:#FFFFFF;
+     
+    --color-accent-grey:#ABAFB1;
+    --color-bno-red:#E76363;
+    --color-bno-yellow:#FFE400;
+    --color-bno-purple:#8582D2;
+    --color-bno-black:#000000;
+    
+    --color-focus:#692D2D;
+   
+  }
+    /***********/
+    /* GENERAL */
+    /***********/
+  
+  body {
+    color:var(--color-text);
+    background-color:var(--color-background);
+  }
+  /* ALL SELECTOR */
+  * { 
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+  }
+  p {	
+  font-size: 1.4em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  a {color:var(--color-text);
+  text-decoration:none;
+  }
+  
+    /***********/
+    /* FOOTER */
+    /***********/
+  
+  footer {
+    background-color: var(--color-bno-black);
+   }
+  
+  footer * { color: var(--color-text-dark-bg);
+    
+  }
+  
+  /***************************/
+  /* GENERAL STYLING CODE */
+  /**************************/
+  
+  /* SECTION EVENTS */
+  section:nth-of-type(5) {
+    background-color: var(--color-bno-purple);
+  }
+  /* SECTION STAY TUNED */
+  section:nth-of-type(9) {
+    background-color: var(--color-accent-grey);
+  }
+  /* SECTION WORK SHOW */
+  section:nth-of-type(11) {
+    background-image:URL("https://www.bno.nl/web/image/63652-54a69a15/Work-Show-NorthernLight-Homepage.jpg");
+  }
+  /* SECTION JOBS */
+  section:nth-of-type(10) {
+    background-color: var(--color-bno-yellow);
+  }
+  
+  /* SECTION DUTCH DESIGN */
+  section:nth-of-type(11) {
+    background-image:URL("https://www.bno.nl/web/image/45581-4003e2c3/Dd%20Yearbook%20%2721_website_boek%20links_1920%20x%20860.jpg");
+  }
+  
+  
+  /************/
+  /* NAVIGATIE */
+  /************/
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  
+    background-color: var(--color-bno-black);
+  
+    transform: translateY(-100%);
+  
+    transition-duration: 0.3s;
+  }
+  
+  nav.open {
+    transform: translateY(0%);
+  }
+    
+  nav a {
+    color: 
+  }
+  nav h2 {
+    color: var(--color-link-dark-bg);
+  }
+  
+  
+  
+  /*******************************************/
+  /* DE LIJST (UIT CODE VAN SANNE MET VISSEN*/
+  /******************************************/
+  ul {
+    /* een grid voor de items */
+    /* zoveel kolommen van 15em als er passen */
+    /* de kolommen vullen daarna samen de hele breedte */
+    /* tussen de kolommen en rijen een gutter (gap) van 1em */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: warp;
+    justify-content: center;
+    gap: 2em;
+    */
+    
+    
+    
+  }
+  
+  /***************/
+  /* NIEUWS CARD */
+  /***************/
+  
+  li {
+    display:grid;
+    grid-template-rows:min-content min-content min-content;
+   row-gap: .1em;}
+    
+  /****************/
+  /* NIEUWS TITEL */
+  /****************/
+  
+  li h3 {
+    grid-row-start:3; 
+    display:grid;
+    
+  }
+  
+  /**************/
+  /* PARAGRAFEN */
+  /**************/
+  
+  /* PARAGRAAF */
+  li p:nth-of-type(1) {
+    grid-row-start:4;
+  }
+  
+  /* #NIEUWS */
+  li p:nth-of-type(2) {
+    grid-row-start:2;
+  }
+  
+  main img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
