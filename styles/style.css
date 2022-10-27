@@ -1,182 +1,464 @@
-  /***********/
-  /* ROOT VAR */
-  /***********/
+/**************************/
+/* ROOT VARIABLES DEFINED */
+/**************************/
 
-  :root {
-    /* HET KLEURENPALET */
-    --color-text:#212529;
-    --color-background:#FFFFFF;
-    --color-text-dark-bg:#FFFFFF;
-    --color-button-background:#000000;
-    --color-button-submit-text:#FFFFFF;
-    
-   --color-link-light-bg:#000000;
-   --color-link-dark-bg:#FFFFFF;
-     
-    --color-accent-grey:#ABAFB1;
-    --color-bno-red:#E76363;
-    --color-bno-yellow:#FFE400;
-    --color-bno-purple:#8582D2;
-    --color-bno-black:#000000;
-    
-    --color-focus:#692D2D;
-   
-  }
-    /***********/
-    /* GENERAL */
-    /***********/
-  
-  body {
-    color:var(--color-text);
-    background-color:var(--color-background);
-  }
-  /* ALL SELECTOR */
-  * { 
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 400;
-  }
-  p {	
+:root {
+  /* HET KLEURENPALET GENERAL */
+  --color-text: #212529;
+  --color-background: #fff;
+  --color-text-dark-bg: #fff;
+  --color-button-background: #000;
+  --color-button-submit-text: #fff;
+
+  /* GENERAL LINKS */
+  --color-link-light-bg: #000;
+  --color-link-dark-bg: #fff;
+
+  /* NAVIGATION */
+  --color-nav-link-light: #fff;
+  --color-nav-title-light: #abafb1;
+
+  /* BNO COLORS */
+  --color-accent-grey: #abafb1;
+  --color-bno-grey: #abafb1;
+  --color-bno-red: #e76363;
+  --color-bno-yellow: #ffe400;
+  --color-bno-purple: #8582d2;
+  --color-bno-black: #000;
+  --color-bno-white: #fff;
+
+  /* STATES */
+  --color-focus: #692d2d;
+}
+
+/************************/
+/* GENERAL STYLING BODY */
+/************************/
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+/******************************/
+/*  GENERAL STYLING ALL ELSE  */
+/******************************/
+
+section {
+  padding: 2em;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+abbr,
+a,
+time {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+}
+p {
   font-size: 1.4em;
-  }
-  h1 {
-    font-size: 2.5em;
-  }
-  h2 {
-    font-size: 4em;
-  }
-  h3 {
-    font-size: 2em;
-  }
-  a {color:var(--color-text);
-  text-decoration:none;
-  }
-  
-    /***********/
-    /* FOOTER */
-    /***********/
-  
-  footer {
-    background-color: var(--color-bno-black);
-   }
-  
-  footer * { color: var(--color-text-dark-bg);
-    
-  }
-  
-  /***************************/
-  /* GENERAL STYLING CODE */
-  /**************************/
-  
-  /* SECTION EVENTS */
-  section:nth-of-type(5) {
-    background-color: var(--color-bno-purple);
-  }
-  /* SECTION STAY TUNED */
-  section:nth-of-type(9) {
-    background-color: var(--color-accent-grey);
-  }
-  /* SECTION WORK SHOW */
-  section:nth-of-type(11) {
-    background-image:URL("https://www.bno.nl/web/image/63652-54a69a15/Work-Show-NorthernLight-Homepage.jpg");
-  }
-  /* SECTION JOBS */
-  section:nth-of-type(10) {
-    background-color: var(--color-bno-yellow);
-  }
-  
-  /* SECTION DUTCH DESIGN */
-  section:nth-of-type(11) {
-    background-image:URL("https://www.bno.nl/web/image/45581-4003e2c3/Dd%20Yearbook%20%2721_website_boek%20links_1920%20x%20860.jpg");
-  }
-  
-  
-  /************/
-  /* NAVIGATIE */
-  /************/
-  nav {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
-  
-    background-color: var(--color-bno-black);
-  
-    transform: translateY(-100%);
-  
-    transition-duration: 0.3s;
-  }
-  
-  nav.open {
-    transform: translateY(0%);
-  }
-    
-  nav a {
-    color: var(--color-link-dark-bg);
-  }
-  nav h2 {
-    color: var(--color-link-dark-bg);
-  }
-  
-  
-  
-  /*******************************************/
-  /* DE LIJST (UIT CODE VAN SANNE MET VISSEN*/
-  /******************************************/
-  ul {
-    /* een grid voor de items */
-    /* zoveel kolommen van 15em als er passen */
-    /* de kolommen vullen daarna samen de hele breedte */
-    /* tussen de kolommen en rijen een gutter (gap) van 1em */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: warp;
-    justify-content: center;
-    gap: 2em;
- 
-    
-    
-    
-  }
-  
-  /***************/
-  /* NIEUWS CARD */
-  /***************/
-  /*FLEX ORDER KAN KORTER (row en column bepaald richting order plek)*/
-  /*-100 is handig als je kleinere waardes nodig*/
-  li {
-    display:grid;
-   
-   row-gap: .1em;}
-    
-  /****************/
-  /* NIEUWS TITEL */
-  /****************/
-  
-  li h3 {
-    grid-row-start:3; 
-    display:grid;
-    
-  }
-  
-  /**************/
-  /* PARAGRAFEN */
-  /**************/
-  
-  /* PARAGRAAF */
-  li p:nth-of-type(1) {
-    grid-row-start:4;
-  }
-  
-  /* #NIEUWS */
-  li p:nth-of-type(2) {
-    grid-row-start:2;
-  }
-  
-  main img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 4em;
+}
+h3 {
+  font-size: 2em;
+}
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* BNO BUTTONS class overal, nog te vervangen selector */
+
+.bnoButton {
+  background-color: var(--color-bno-black);
+  color: var(--color-link-dark-bg);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+.bnoButtonOutlined {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-bno-black);
+  color: var(--color-bno-black);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+
+/***********************/
+/*  NAVIGATION MODULE  */
+/***********************/
+
+/* MENU BALK BOVENIN */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header abbr {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1em;
+}
+
+header h1 {
+  flex-grow: 4;
+}
+
+header a {
+  flex-grow: 1;
+}
+
+header button {
+  flex-grow: 1;
+}
+
+/* MENU FOLDOUT */
+
+header nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+
+  background-color: var(--color-bno-black);
+
+  transform: translateY(-100%);
+
+  transition-duration: 0.4s;
+}
+
+header nav.open {
+  transform: translateY(0%);
+}
+
+header nav a {
+  color: var(--color-nav-link-light);
+}
+header nav h2 {
+  color: var(--color-nav-title-light);
+  font-size: 2em;
+}
+
+header nav li:nth-of-type(10) h2 {
+  font-size: 1em;
+}
+
+header nav button {
+  position: absolute;
+  top: 3em;
+  right: 3em;
+}
+
+/*media queries beginnen bij mobile*/
+
+.navigatie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "advies educatie agenda leden"
+    "jobs inspiratie nieuws bno"
+    "socials socials . taal";
+  margin: 0;
+  padding: 2.5em;
+}
+
+.navigatie ul {
+  margin: 0;
+  padding: 0;
+}
+
+.advies {
+  grid-area: advies;
+}
+
+.educatie {
+  grid-area: educatie;
+}
+
+.agenda {
+  grid-area: agenda;
+}
+
+.leden {
+  grid-area: leden;
+}
+
+.jobs {
+  grid-area: jobs;
+}
+
+.inspiratie {
+  grid-area: inspiratie;
+}
+
+.nieuws {
+  grid-area: nieuws;
+}
+
+.bno {
+  grid-area: bno;
+}
+
+.socials {
+  grid-area: socials;
+  align-items: center;
+  display: flex;
+}
+
+.socials ul {
+  display: flex;
+  gap: 2em;
+}
+
+.taal {
+  grid-area: taal;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.taal ul {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+/***********/
+/* FOOTER */
+/***********/
+
+footer {
+  background-color: var(--color-bno-black);
+}
+
+footer * {
+  color: var(--color-text-dark-bg);
+}
+
+/*****************/
+/*  HERO MODULE  */
+/*****************/
+
+section:nth-of-type(1) {
+  background-image: URL("https://www.bno.nl/web/image/62472-8ae0c45b/Rogier-Roeters-Start_4-diap-1920x1080px.jpg");
+}
+
+section:nth-of-type(1) h2 {
+  color: var(--color-bno-white);
+  font-size: 7em;
+  max-width: 50%;
+}
+
+section:nth-of-type(1) abbr {
+  color: var(--color-bno-white);
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+/*****************************/
+/*  HIGHLIGHTED NEWS MODULE  */
+/*****************************/
+
+section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  /*Double check if there is no other way*/
+  row-gap: 2em;
+}
+
+section:nth-of-type(2) h3 {
+  order: 2;
+  font-size: 3.5em;
+}
+
+section:nth-of-type(2) p:nth-of-type(1) {
+  order: 3;
+}
+
+section:nth-of-type(2) p:nth-of-type(2) {
+  order: 1;
+  font-size: 1em;
+}
+
+section:nth-of-type(2) img {
+  order: 5;
+}
+
+section:nth-of-type(2) a {
+  order: 4;
+  max-width: 8ch;
+}
+
+/*****************/
+/*  NEWS MODULE  */
+/*****************/
+
+section:nth-of-type(3) li {
+  display: flex;
+  flex-direction: column;
+  /*Double check if there is no other way*/
+  row-gap: 2em;
+}
+
+section:nth-of-type(3) h3 {
+  order: 3;
+}
+
+section:nth-of-type(3) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(3) img {
+  order: 2;
+}
+
+section:nth-of-type(3) p:nth-of-type(2) {
+  order: 1;
+}
+
+/*******************/
+/*  EVENTS MODULE  */
+/*******************/
+
+/* SECTION EVENTS */
+section:nth-of-type(5) {
+  background-color: var(--color-bno-purple);
+}
+
+section:nth-of-type(5) li {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(5) h3 {
+  order: 3;
+  font-size: 3em;
+}
+
+section:nth-of-type(5) time {
+  order: 4;
+  font-size: 2em;
+}
+section:nth-of-type(5) p:nth-of-type(1) {
+  order: 5;
+  font-size: 1em;
+}
+
+section:nth-of-type(5) img {
+  order: 1;
+}
+
+section:nth-of-type(5) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+
+/*********************/
+/*  ARTICLES MODULE  */
+/*********************/
+
+section:nth-of-type(6) li {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(6) h3 {
+  order: 3;
+}
+section:nth-of-type(6) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(6) img {
+  order: 1;
+}
+
+section:nth-of-type(6) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+
+/***********************/
+/*  STAY TUNED MODULE  */
+/***********************/
+
+section:nth-of-type(9) {
+  background-color: var(--color-accent-grey);
+}
+
+/***************************/
+/*  SHOW YOUR WORK MODULE  */
+/***************************/
+
+section:nth-of-type(11) {
+  background-image: URL("https://www.bno.nl/web/image/63652-54a69a15/Work-Show-NorthernLight-Homepage.jpg");
+}
+
+/********************/
+/*  DD JOBS MODULE  */
+/********************/
+
+section:nth-of-type(10) {
+  background-color: var(--color-bno-yellow);
+}
+
+section:nth-of-type(10) li {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  /*Double check if there is no other way*/
+  row-gap: 2em;
+}
+
+section:nth-of-type(10) h3 {
+  order: 3;
+}
+section:nth-of-type(10) h4 {
+  order: 4;
+}
+
+section:nth-of-type(10) time {
+  order: 5;
+}
+section:nth-of-type(10) p:nth-of-type(1) {
+  order: 6;
+}
+
+section:nth-of-type(10) img {
+  order: 1;
+}
+
+section:nth-of-type(10) p:nth-of-type(2) {
+  order: 2;
+}
+
+/*************************/
+/*  DUTCH DESIGN MODULE  */
+/*************************/
+
+section:nth-of-type(11) {
+  background-image: URL("https://www.bno.nl/web/image/45581-4003e2c3/Dd%20Yearbook%20%2721_website_boek%20links_1920%20x%20860.jpg");
+}
