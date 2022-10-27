@@ -220,17 +220,34 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+HTML en basis CSS ging goed, alles staat zo goed als, erg compleet
+
+Responsive maken, menu verkeerd begonnen, eerst kleinste versie uitwerken en dan groter
+Moeite met paddings
+Volgorde met Flex gedaan, maar twijfels of ik toch niet GRID moet gebruiken
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Jesse [SERVICE]
+De CSS van de tweede pagina
+Wat JS 
+
+| Emilio [SERVICE]
+Footer: CSS - Label & Input
+Animeren Button
+
+
+
+| Giorgio [RESPONSIVE]
+Responsiveness
+
+| Henriks [RESPONSIVE]
+Media queries
+Onverwachte spacing/padding/margin
+Twee losse CSS bestanden
+Javascript gedrag, menu niet overlay, maar content push-down
 
 
 ### Verslag van meeting
