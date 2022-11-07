@@ -43,6 +43,7 @@ Landingspagina + een Iteratie op Over Ons
 </details>
 </details>
 
+## Toegankelijkheidstest
  <details>
 <summary>1ste Toegankelijkheidstest</summary>
 
@@ -89,7 +90,6 @@ Outline soms onvolledig
  
 Darkmode afwezig
 
-</details>
 </details>
 
 
