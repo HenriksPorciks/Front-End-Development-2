@@ -28,11 +28,16 @@ Landingspagina + een Iteratie op Over Ons
 
 ##### Screenshot(s) van de BNO Landingspagina (small screen): 
 
-<details><summary>Breakdownschets</summary><img src="images/BREAKDOWN%20SCHETS.png" width="375px" alt="Breakdown schets">
+<details><summary>BNO Home</summary>
+ <img src="images/SCREENSHOT%20BNO%201.png" width="375px" alt="BNO Home Pagina Screenshot">
+ <img src="images/SCREENSHOT%20BNO%202.png" width="375px" alt="BNO Home Pagina Screenshot">
+ <img src="images/SCREENSHOT%20BNO%203.png" width="375px" alt="BNO Home Pagina Screenshot">
+ <img src="images/SCREENSHOT%20BNO%204.png" width="375px" alt="BNO Home Pagina Screenshot">
 </details>
 #### Screenshot(s) van de  BNO Over Ons (small screen):
 
-<img src="images/www.bno.nl_over-ons.png" width="375px" alt="omschrijving van de pagina">
+<<details><summary>BNO Over Ons</summary><img src="images/BREAKDOWN%20SCHETS.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
+</details>
  
 ### Toegankelijkheidstest resultaten:
 
@@ -88,8 +93,8 @@ Darkmode afwezig
 <summary>Week 1</summary>
 
 ### BNO Home Pagina 
-<img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
-https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3A1
+<details><summary>Breakdownschets</summary><img src="images/BREAKDOWN%20SCHETS.png" width="375px" alt="Breakdown schets">
+</details>
 
 </details>
 
