@@ -305,8 +305,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+### Sanne's CodePen
+
+#### Uitklap menu
+ https://codepen.io/shooft/pen/NWMeKWy 
+#### Uitklap floep floep menu
+ https://codepen.io/shooft/pen/abGKMje
+#### Brede section voor Henriks
+ https://codepen.io/shooft/pen/MWXKXEr
+ 
+ ### CSS Tricks
+ 
+#### Skip to main content 
+https://css-tricks.com/how-to-create-a-skip-to-content-link/
 
 </details>
