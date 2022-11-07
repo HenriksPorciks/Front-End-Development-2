@@ -178,8 +178,6 @@ Darkmode afwezig
  - Veel moeite met flexbox en grid daadwerkelijk aan het werk te krijgen
  - Github werkt nog steeds niet
  
-### Screenshot(s)
- 
  
 
 
@@ -217,31 +215,24 @@ Darkmode afwezig
 <details>
 <summary>2de Toegankelijkheidstest</summary>
 
-### Bevindingen
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+### Toegankelijkheidstest resultaten:
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### ADHD / Beperkte visie / Parkinsons
 
+Navigatie is makkelijker, knoppen zijn prima te raken
+Navigatie balk nog steeds onhandig
+Text en typografie is voldoende groot
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Navigeren met TAB en Narrator
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Verdwijnt in het menu zonder dat die open is en duurt lang met tabben
+Geen foto ALT teksten
 
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
+#### Aandachtspunt om uit te werken
+ - Skip to main content
+ - Extra hidden titels toevoegen
+ 
 </details>
 
 
@@ -251,15 +242,24 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 ## Voortgang 3
 
 <details>
-<summary>Week 4</summary>
+<summary>3de Voortgangsgesprek</summary>
 
 ### Stand van zaken
 
-HTML en basis CSS ging goed, alles staat zo goed als, erg compleet
+ #### Ging goed
+ 
+ - Complete correcte HTML
+ - Basis CSS en toepassing van GRID
+ - Ordenen van items met FLEX
+ 
+#### Ging minder goed
 
-Responsive maken, menu verkeerd begonnen, eerst kleinste versie uitwerken en dan groter
-Moeite met paddings
-Volgorde met Flex gedaan, maar twijfels of ik toch niet GRID moet gebruiken
+ - Responsive maken in de juist maten
+ - Menu verkeerd begonnen 
+ - Veel moeite met verkeerde PADDING en MARGIN overal
+ - Soms rare overflow
+ - Volgorde met FLEX gedaan, twijfels of GRID niet beter is
+
 
 
 ### Agenda voor meeting
@@ -301,16 +301,30 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Eindgesprek
 
 <details>
-<summary>Week 5</summary>
+<summary>Het einde</summary>
 
 ### Stand van zaken
  
+- Alles lijkt 99% af te zijn, al is de hele website op Github krijgen nog steeds niet een makkelijke opgave geweest. Het vak is een leerzaam process en heb door de opgedane kennis meer structuur en logica weten aan te brengen aan mijn code.
+
 #### Ging goed
+ - Alles uitgebreid tot in detail coderen
+ -
+ -
  
 #### Ging minder goed
-
+- Verschillende breedtes achtergronden meegeven terwijl de MAIN een vaste maximale breedte had
+- Uitklap menu werkend krijgen
+ 
 ### Screenshot(s)
-
+<details><summary>Full-width Background probleem</summary>
+ <img src="images/SCREENSHOT%20BNO%20EXAMPLE%201.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
+ <img src="images/SCREENSHOT%20BNO%20EXAMPLE%202.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
+</details>
+ <details><summary>Menu probleem</summary>
+ <img src="images/SCREENSHOT%20BNO%20EXAMPLE%203.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
+ <img src="images/SCREENSHOT%20BNO%20EXAMPLE%204.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
+</details>
 </details>
 
 
