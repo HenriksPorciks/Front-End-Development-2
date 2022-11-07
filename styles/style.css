@@ -542,3 +542,592 @@ footer h2 {
       "madeBy madeBy";
   }
 }
+
+/*****************/
+/*  HERO MODULE  */
+/*****************/
+
+section:nth-of-type(1) {
+  background-image: URL("https://www.bno.nl/web/image/62472-8ae0c45b/Rogier-Roeters-Start_4-diap-1920x1080px.jpg");
+  width: 100vw;
+  background-size: cover;
+}
+section:nth-of-type(1) div {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section:nth-of-type(1) h2 {
+  color: var(--color-bno-white);
+  font-size: 7em;
+}
+
+section:nth-of-type(1) abbr {
+  color: var(--color-bno-white);
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+/*****************************/
+/*  HIGHLIGHTED NEWS MODULE  */
+/*****************************/
+
+section:nth-of-type(2) div {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-general-between-modules) 0;
+}
+
+@media (min-width: 678px) {
+  section:nth-of-type(2) {
+    flex-direction: row;
+  }
+
+  section:nth-of-type(2) div {
+    width: 50%;
+  }
+
+  section:nth-of-type(2) img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+section:nth-of-type(2) div h3 {
+  order: 2;
+  font-size: 3.5em;
+}
+
+section:nth-of-type(2) div p:nth-of-type(1) {
+  order: 3;
+}
+
+section:nth-of-type(2) div p:nth-of-type(2) {
+  order: 1;
+  font-size: 1em;
+}
+
+section:nth-of-type(2) div a {
+  order: 4;
+}
+
+/*****************/
+/*  NEWS MODULE  */
+/*****************/
+
+section:nth-of-type(3) li {
+  display: flex;
+  flex-direction: column;
+}
+section:nth-of-type(3) h2 {
+  margin: 1em 0 0 0;
+}
+
+section:nth-of-type(3) h3 {
+  order: 3;
+}
+
+section:nth-of-type(3) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(3) img {
+  order: 1;
+  margin-bottom: 1rem;
+}
+
+section:nth-of-type(3) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+/* 3 Items naast elkaar ipv onder elkaar*/
+@media (min-width: 800px) {
+  section:nth-of-type(3) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0;
+  }
+}
+
+/*********************/
+/*  GRADUATE MODULE  */
+/*********************/
+
+section:nth-of-type(4) div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-accent-grey);
+  padding: var(--spacing-general-module-sides);
+}
+
+section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-general-between-modules) 0;
+}
+
+@media (min-width: 678px) {
+  section:nth-of-type(4) {
+    flex-direction: row;
+  }
+
+  section:nth-of-type(4) div {
+    width: 50%;
+  }
+
+  section:nth-of-type(4) img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+/*******************/
+/*  EVENTS MODULE  */
+/*******************/
+
+section:nth-of-type(5) {
+  width: 100vw;
+  background-color: var(--color-bno-purple);
+}
+section:nth-of-type(5) div {
+  max-width: 1140px;
+  margin: 0 auto;
+  contain: content;
+}
+
+section:nth-of-type(5) li {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(5) h3 {
+  order: 3;
+  font-size: 3em;
+  margin-left: 1rem;
+}
+
+section:nth-of-type(5) time {
+  order: 4;
+  font-size: 2em;
+  margin-left: 1rem;
+}
+section:nth-of-type(5) p:nth-of-type(1) {
+  order: 5;
+  font-size: 1em;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+section:nth-of-type(5) img {
+  order: 1;
+}
+
+section:nth-of-type(5) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+/* 3 Items naast elkaar ipv onder elkaar*/
+@media (min-width: 800px) {
+  section:nth-of-type(5) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+  }
+}
+
+/*********************/
+/*  ARTICLES MODULE  */
+/*********************/
+
+section:nth-of-type(6) {
+  margin: var(--spacing-general-between-modules) 0 0;
+}
+
+section:nth-of-type(6) hr {
+  margin: var(--spacing-general-between-modules) 0 0 0;
+}
+
+section:nth-of-type(6) li {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(6) h3 {
+  order: 3;
+}
+section:nth-of-type(6) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(6) img {
+  order: 1;
+  margin-bottom: 1rem;
+}
+
+section:nth-of-type(6) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+
+/* 3 Items naast elkaar ipv onder elkaar*/
+
+@media (min-width: 800px) {
+  section:nth-of-type(6) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+  }
+}
+/*****************************/
+/*  COACHING MODULE  */
+/*****************************/
+
+section:nth-of-type(7) div {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(7) {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-general-between-modules) 0;
+}
+
+@media (min-width: 678px) {
+  section:nth-of-type(7) {
+    flex-direction: row;
+  }
+
+  section:nth-of-type(7) div {
+    width: 50%;
+  }
+
+  section:nth-of-type(7) img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+section:nth-of-type(7) div h3 {
+  order: 2;
+  font-size: 3.5em;
+}
+
+section:nth-of-type(7) div p:nth-of-type(1) {
+  order: 3;
+}
+
+section:nth-of-type(7) div p:nth-of-type(2) {
+  order: 1;
+  font-size: 1em;
+}
+
+section:nth-of-type(7) div a {
+  order: 4;
+}
+
+/***************************/
+/*  SHOW YOUR WORK MODULE  */
+/***************************/
+
+section:nth-of-type(8) {
+  background-image: URL("https://www.bno.nl/web/image/64044-4c7392d4/Work-Show-Rich-Dust-2_1920x1080.jpg");
+  width: 100vw;
+  height: 40em;
+  contain: cover;
+  display: flex;
+  align-items: center;
+}
+section:nth-of-type(8) div {
+  background-color: var(--color-bno-red);
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: var(--spacing-general-module);
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(8) div h2 {
+  order: 2;
+  font-size: 3.5em;
+}
+
+section:nth-of-type(8) div p:nth-of-type(1) {
+  order: 3;
+}
+
+section:nth-of-type(8) div p:nth-of-type(2) {
+  order: 1;
+  font-size: 1em;
+}
+
+section:nth-of-type(8) div a {
+  order: 4;
+}
+
+/***********************/
+/*  STAY TUNED MODULE  */
+/***********************/
+
+section:nth-of-type(9) {
+  background-color: var(--color-accent-grey);
+  margin: var(--spacing-general-between-modules) 0;
+}
+section:nth-of-type(9) div {
+  padding: var(--spacing-general-module-sides);
+}
+
+section:nth-of-type(9) {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 678px) {
+  section:nth-of-type(9) {
+    flex-direction: row;
+  }
+
+  section:nth-of-type(9) div {
+    width: 50%;
+  }
+
+  section:nth-of-type(9) img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+/********************/
+/*  DD JOBS MODULE  */
+/********************/
+
+section:nth-of-type(10) {
+  width: 100vw;
+  background-color: var(--color-bno-yellow);
+}
+section:nth-of-type(10) div {
+  max-width: 1140px;
+  margin: 0 auto;
+  contain: content;
+}
+
+section:nth-of-type(10) li {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(10) h3 {
+  order: 3;
+  margin-left: 1rem;
+}
+section:nth-of-type(10) h4 {
+  order: 4;
+  margin-left: 1rem;
+}
+
+section:nth-of-type(10) time {
+  order: 5;
+  margin-left: 1rem;
+}
+section:nth-of-type(10) p:nth-of-type(1) {
+  order: 6;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+section:nth-of-type(10) img {
+  order: 1;
+}
+
+section:nth-of-type(10) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+/* 3 Items naast elkaar ipv onder elkaar*/
+
+@media (min-width: 800px) {
+  section:nth-of-type(10) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+  }
+}
+
+/*****************************/
+/*  DUTCH DESIGN MODULE  */
+/*****************************/
+
+section:nth-of-type(11) {
+  background-image: URL("https://www.bno.nl/web/image/45581-4003e2c3/Dd%20Yearbook%20%2721_website_boek%20links_1920%20x%20860.jpg");
+  width: 100vw;
+  contain: cover;
+  height: 40em;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+}
+section:nth-of-type(11) div {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section:nth-of-type(11) h3 {
+  text-align: center;
+  color: var(--color-text-dark-bg);
+  font-size: 4em;
+}
+section:nth-of-type(11) p {
+  text-align: center;
+  color: var(--color-text-dark-bg);
+  font-size: 2.5em;
+}
+section:nth-of-type(11) a {
+  border-color: var(--color-bno-white);
+  color: var(--color-bno-white);
+}
+
+/*****************************/
+/*  TESTIMONIAL MODULE  */
+/*****************************/
+
+section:nth-of-type(12) h2 {
+  display: none;
+}
+
+section:nth-of-type(12) div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--spacing-general-module-sides) 0 0;
+}
+section:nth-of-type(12) {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-general-between-modules) 0;
+}
+
+@media (min-width: 678px) {
+  section:nth-of-type(12) {
+    flex-direction: row;
+  }
+
+  section:nth-of-type(12) div {
+    width: 50%;
+  }
+
+  section:nth-of-type(12) img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+section:nth-of-type(12) div p:nth-of-type(3) {
+  order: 1;
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+section:nth-of-type(12) div p:nth-of-type(1) {
+  order: 2;
+  font-size: 2em;
+}
+
+section:nth-of-type(12) div p:nth-of-type(2) {
+  order: 3;
+  font-size: 2em;
+}
+
+section:nth-of-type(12) div a {
+  order: 4;
+}
+
+/*************************************/
+/*  MEDIA QUERIES VAN BNO AANGEPAST  */
+/*************************************/
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    max-width: 960px;
+  }
+  section:nth-of-type(5) div {
+    max-width: 960px;
+  }
+  section:nth-of-type(5) div {
+    max-width: 960px;
+  }
+  section:nth-of-type(8) div {
+    max-width: 960px;
+  }
+  section:nth-of-type(10) div {
+    max-width: 960px;
+  }
+
+  section:nth-of-type(11) div {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  main {
+    max-width: 720px;
+  }
+  section:nth-of-type(5) div {
+    max-width: 720px;
+  }
+  section:nth-of-type(5) div {
+    max-width: 720px;
+  }
+  section:nth-of-type(8) div {
+    max-width: 720px;
+  }
+  section:nth-of-type(10) div {
+    max-width: 720px;
+  }
+
+  section:nth-of-type(11) div {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    max-width: 540px;
+  }
+  section:nth-of-type(5) div {
+    max-width: 540px;
+  }
+  section:nth-of-type(5) div {
+    max-width: 540px;
+  }
+  section:nth-of-type(8) div {
+    max-width: 540px;
+  }
+  section:nth-of-type(10) div {
+    max-width: 540px;
+  }
+
+  section:nth-of-type(11) div {
+    max-width: 540px;
+  }
+}
