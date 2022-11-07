@@ -300,10 +300,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Bronnenlijst
 
-<details open>
-<summary>continu bijhouden terwijl je werkt</summary>
-
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
+<details>
+<summary>Gebruikte inspiratie bronnen</summary>
 
 ### Sanne's CodePen
 
