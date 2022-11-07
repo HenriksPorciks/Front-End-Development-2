@@ -1,16 +1,7 @@
 # Procesverslag
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
+<summary>Henriks Porciks</summary>
 
 ### Auteur:
 Henriks Porciks
@@ -29,77 +20,75 @@ Focus op Responsive
 ## Je website
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
+<summary>BNO Website</summary>
 
-### Je opdracht:
-BNO 
-Landingspagina + Iteratie op Over Ons
+### BNO - Beroepsorganisatie Nederlandse Ontwerpers
+ 
+Landingspagina + een Iteratie op Over Ons
 
-#### Screenshot(s) van de eerste pagina (small screen): 
-BNO Landingspagina 
+#### Screenshot(s) van de BNO Landingspagina (small screen): 
+
 <img src="images/www.bno.nl_.png" width="375px" alt="omschrijving van de pagina">
 
-#### Screenshot(s) van de tweede pagina (small screen):
-BNO Over Ons
+#### Screenshot(s) van de  BNO Over Ons (small screen):
+
 <img src="images/www.bno.nl_over-ons.png" width="375px" alt="omschrijving van de pagina">
  
 ### Toegankelijkheidstest resultaten:
-ADHD
 
-Navigatie slecht 
-text groot
-weinig context eerst
+###ADHD
+
+Navigatie is slecht en moeizaam, zou beter sticky zijn
+Text en typografie is voldoende groot
+Er is weinig context aan het begin van de pagina
 
 
-Tunnelvisie:
-Zoeken in menu / weinig contrast
+###Tunnelvisie
+Zoeken in menu levert soms te weinig contrast op
 
-grote text, fijn
-moeilijk te lezen
-van dichtbij is het te lezen
-muis vinden moeilijk
+Text en typografie is groot, fijn
+Menu items moeilijk te lezen
+Van dichtbij is het goed te lezen
+Muis vinden moeilijk met tunnelvisie
 Externe dingen echt te klein niet leesbaar
 
-parkinson
+###Parkinson
 
-menu moeilijk , knoppen klein en moeilijk te raken 
-actie diep begraven
-(standaard defualt afganistan why)
+Menu moeilijk is erg moeilijk, raakvlak is te klein
+ 
+Knoppen en links zijn te klein en moeilijk te raken 
+Actie binnen de site ligt diep begraven
 
 
-TABBEN
+###Navigeren met TAB en Narrator
 
 Skipt over headers
-geeen focus bij tabben je ziet niet waar je bent selctie is niet outlined
+Geen focus state bij tabben 
+Geen visuele feedback, men ziet niet waar men is, doordat de selctie is niet outlined
+Geselecteerde foto niet zichtbaar
+Geen foto ALT teksten
+Outline soms onvolledig
 
-foto link n iet selected zichtbaar
-outline niet volledig
-
-IDEA: skip to content for tabb
+###IDEA: Skip to content for tabb
 
 
+### Opgevallen
+ 
 Darkmode afwezig
 
-
-
 </details>
 
 
 
 
-## Breakdownschets (week 1)
+## Breakdownschets
 
 <details>
-<summary>https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3A1</summary>
+<summary>Week 1</summary>
 
-### de hele pagina: 
+### BNO Home Pagina 
 <img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
-
-### dynamisch deel (bijv menu): 
-<img src="images/www.bno.nl_.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/www.bno.nl_over-ons.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3A1
 
 </details>
 
@@ -107,32 +96,34 @@ Darkmode afwezig
 
 
 
-## Voortgang 1 (week 2)
+## Voortgang 1
 
 <details>
-<summary>uitwerken voor 1e voortgang</summary>
+<summary>Week 2</summary>
 
 ### Stand van zaken
 Nog moeite met de hoeveelheid code, maar vooral focus op semantiek
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+ Henriks | De vertaalslag van breakdownschets naar HTML
 
+ Giorgio | Vertaalslag van breakdownschets naar HTML
 
+ Nathan | HTML code
+ 
+ Jesse | HTML code en breakdownschets
+
+ Emilio | Breakdownschets
+ 
+ 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- article > li veranderen
-- alt image niet vergeten
-- verder uitwerken
-- ...
+- <article> naar <ul><li> veranderen
+- ALT image text niet vergeten
+- Verder uitwerken
+
 
 </details>
 
@@ -140,10 +131,10 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
 
-## Voortgang 2 (week 3)
+## Voortgang 2
 
 <details>
-<summary>uitwerken voor 2e voortgang</summary>
+<summary>Week 3</summary>
 
 ### Stand van zaken
 Het maken van root colors en de juiste font grottes overal toepassen, veel moeite met flexbox en grid daadwerkelijk aan het werk te krijgen 
@@ -152,9 +143,9 @@ Het maken van root colors en de juiste font grottes overal toepassen, veel moeit
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Henriks GRID en FLEXBOX, m.b.t responsiveness van bepaalde onderdelen van de website, het wilt niet lukken
+ Henriks | GRID en FLEXBOX, m.b.t responsiveness van bepaalde onderdelen van de website, het wilt niet lukken
 
-| Giorgio Ik wil alleen mijn HTML en CSS bespreken, vooral over de breakpoints en hoe je het goed responsive krijgt.
+ Giorgio |Ik wil alleen mijn HTML en CSS bespreken, vooral over de breakpoints en hoe je het goed responsive krijgt.
 
  Nathan Stuger | afwezig
  
