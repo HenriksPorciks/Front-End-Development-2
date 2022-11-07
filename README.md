@@ -36,7 +36,9 @@ Landingspagina + een Iteratie op Over Ons
 </details>
 #### Screenshot(s) van de  BNO Over Ons (small screen):
 
-<<details><summary>BNO Over Ons</summary><img src="images/BREAKDOWN%20SCHETS.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
+<details><summary>BNO Over Ons</summary>
+ <img src="images/BNO%20OVER%20ONS%20SCREENSHOT%201.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
+ <img src="images/BNO%20OVER%20ONS%20SCREENSHOT%202.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
 </details>
  
 ### Toegankelijkheidstest resultaten:
