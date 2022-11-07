@@ -41,7 +41,11 @@ Landingspagina + een Iteratie op Over Ons
  <img src="images/BNO%20OVER%20ONS%20SCREENSHOT%201.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
  <img src="images/BNO%20OVER%20ONS%20SCREENSHOT%202.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
 </details>
- 
+</details>
+
+ <details>
+<summary>1ste Toegankelijkheidstest</summary>
+
 ### Toegankelijkheidstest resultaten:
 
 #### ADHD
@@ -93,7 +97,7 @@ Darkmode afwezig
 ## Breakdownschets
 
 <details>
-<summary>Week 1</summary>
+<summary>Website structuur ontleed</summary>
 
 ### BNO Home Pagina 
 <details><summary>Breakdownschets</summary><img src="images/BREAKDOWN%20SCHETS.png" width="375px" alt="Breakdown schets">
@@ -108,7 +112,7 @@ Darkmode afwezig
 ## Voortgang 1
 
 <details>
-<summary>Week 2</summary>
+<summary>1ste Voortgangsgesprek</summary>
 
 ### Stand van zaken
  
@@ -159,7 +163,7 @@ Darkmode afwezig
 ## Voortgang 2
 
 <details>
-<summary>Week 3</summary>
+<summary>2de Voortgangsgesprek</summary>
 
 
 ### Stand van zaken
@@ -211,7 +215,7 @@ Darkmode afwezig
 ## Toegankelijkheidstest
 
 <details>
-<summary>Week 4</summary>
+<summary>2de Toegankelijkheidstest</summary>
 
 ### Bevindingen
 
@@ -259,21 +263,25 @@ Volgorde met Flex gedaan, maar twijfels of ik toch niet GRID moet gebruiken
 
 
 ### Agenda voor meeting
-
-#### Jesse [SERVICE]
+ 
+#### Service plain
+ 
+#### Jesse
 - De CSS van de tweede pagina
 - Wat JS 
 
-#### Emilio [SERVICE]
+#### Emilio
 - Footer: CSS - Label & Input
 - Animeren Button
-
-#### Giorgio [RESPONSIVE]
+ 
+#### Responsive 
+ 
+#### Giorgio
 - Responsiveness
 
-#### Henriks [RESPONSIVE]
+#### Henriks
 - Media queries
--Onverwachte spacing/padding/margin
+- Onverwachte spacing/padding/margin
 - Twee losse CSS bestanden
 - Javascript gedrag, menu niet overlay, maar content push-down
 
@@ -281,10 +289,8 @@ Volgorde met Flex gedaan, maar twijfels of ik toch niet GRID moet gebruiken
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Margins aanpassen
+- CSS Remedy toepassen
 
 </details>
 
