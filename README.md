@@ -308,13 +308,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - Alles lijkt 99% af te zijn, al is de hele website op Github krijgen nog steeds niet een makkelijke opgave geweest. Het vak is een leerzaam process en heb door de opgedane kennis meer structuur en logica weten aan te brengen aan mijn code.
 
 #### Ging goed
- - Alles uitgebreid tot in detail coderen
- -
- -
+ - Alles uitgebreid tot in detail coderen, zowel HTML als CSS
+ - Uiteindelijk zowel FLEX als GRID goed gelukt
+ - Bijna beter dan de echte site geworden naar mijn eigen mening
  
 #### Ging minder goed
 - Verschillende breedtes achtergronden meegeven terwijl de MAIN een vaste maximale breedte had
 - Uitklap menu werkend krijgen
+- Soms te veel code gebruikt
  
 ### Screenshot(s)
 <details><summary>Full-width Background probleem</summary>
