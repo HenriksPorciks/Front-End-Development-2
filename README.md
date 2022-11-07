@@ -26,7 +26,7 @@ Responsive
  
 Landingspagina + een Iteratie op Over Ons
 
-##### Screenshot(s) van de BNO Landingspagina (small screen): 
+#### Screenshot(s) van de BNO Landingspagina (small screen): 
 
 <details><summary>BNO Home</summary>
  <img src="images/SCREENSHOT%20BNO%201.png" width="375px" alt="BNO Home Pagina Screenshot">
@@ -34,7 +34,8 @@ Landingspagina + een Iteratie op Over Ons
  <img src="images/SCREENSHOT%20BNO%203.png" width="375px" alt="BNO Home Pagina Screenshot">
  <img src="images/SCREENSHOT%20BNO%204.png" width="375px" alt="BNO Home Pagina Screenshot">
 </details>
-#### Screenshot(s) van de  BNO Over Ons (small screen):
+
+ #### Screenshot(s) van de  BNO Over Ons (small screen):
 
 <details><summary>BNO Over Ons</summary>
  <img src="images/BNO%20OVER%20ONS%20SCREENSHOT%201.png" width="375px" alt="BNO Over Ons Pagina Screenshot">
