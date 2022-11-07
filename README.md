@@ -26,7 +26,7 @@ Focus op Responsive
  
 Landingspagina + een Iteratie op Over Ons
 
-#### Screenshot(s) van de BNO Landingspagina (small screen): 
+##### Screenshot(s) van de BNO Landingspagina (small screen): 
 
 <img src="images/www.bno.nl_.png" width="375px" alt="omschrijving van de pagina">
 
@@ -36,14 +36,14 @@ Landingspagina + een Iteratie op Over Ons
  
 ### Toegankelijkheidstest resultaten:
 
-###ADHD
+#### ADHD
 
 Navigatie is slecht en moeizaam, zou beter sticky zijn
 Text en typografie is voldoende groot
 Er is weinig context aan het begin van de pagina
 
 
-###Tunnelvisie
+#### Tunnelvisie
 Zoeken in menu levert soms te weinig contrast op
 
 Text en typografie is groot, fijn
@@ -52,7 +52,7 @@ Van dichtbij is het goed te lezen
 Muis vinden moeilijk met tunnelvisie
 Externe dingen echt te klein niet leesbaar
 
-###Parkinson
+#### Parkinson
 
 Menu moeilijk is erg moeilijk, raakvlak is te klein
  
@@ -60,7 +60,7 @@ Knoppen en links zijn te klein en moeilijk te raken
 Actie binnen de site ligt diep begraven
 
 
-###Navigeren met TAB en Narrator
+#### Navigeren met TAB en Narrator
 
 Skipt over headers
 Geen focus state bij tabben 
@@ -69,10 +69,10 @@ Geselecteerde foto niet zichtbaar
 Geen foto ALT teksten
 Outline soms onvolledig
 
-###IDEA: Skip to content for tabb
+#### IDEA: Skip to content for tabb
 
 
-### Opgevallen
+#### Opgevallen
  
 Darkmode afwezig
 
@@ -105,7 +105,7 @@ https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3
 Nog moeite met de hoeveelheid code, maar vooral focus op semantiek
 
 
-### Agenda voor meeting
+#### Agenda voor meeting
 
  Henriks | De vertaalslag van breakdownschets naar HTML
 
@@ -140,8 +140,7 @@ Nog moeite met de hoeveelheid code, maar vooral focus op semantiek
 Het maken van root colors en de juiste font grottes overal toepassen, veel moeite met flexbox en grid daadwerkelijk aan het werk te krijgen 
 
 
-### Agenda voor meeting
-samen met je groepje opstellen
+#### Agenda voor meeting
 
  Henriks | GRID en FLEXBOX, m.b.t responsiveness van bepaalde onderdelen van de website, het wilt niet lukken
 
@@ -155,12 +154,9 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Begin met kleinste variant van het grid eerst
+- Voeg <h2> toe aan <section> zonder titel en gebruik display:none; in CSS
 
 </details>
 
@@ -174,7 +170,6 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
