@@ -1,0 +1,595 @@
+/***********************/
+/* CSS GENERAL REMEDY  */
+/***********************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/**************************/
+/* ROOT VARIABLES DEFINED */
+/**************************/
+
+:root {
+  /* HET KLEURENPALET GENERAL */
+  --color-text: #212529;
+  --color-background: #fff;
+  --color-text-dark-bg: #fff;
+  --color-button-background: #000;
+  --color-button-submit-text: #fff;
+
+  /* GENERAL LINKS */
+  --color-link-light-bg: #000;
+  --color-link-dark-bg: #fff;
+  --link-visited-dark-bg: #f8bbd0;
+  --link-visited-light-bg: #c48b9f;
+  --link-light-bg: #fff;
+  --link-dark-bg: #000;
+
+  /* NAVIGATION */
+  --color-nav-link-light: #fff;
+  --color-nav-title-light: #abafb1;
+
+  /* BNO COLORS */
+  --color-accent-grey: #abafb1;
+  --color-bno-grey: #abafb1;
+  --color-bno-red: #e76363;
+  --color-bno-yellow: #ffe400;
+  --color-bno-purple: #8582d2;
+  --color-bno-black: #000;
+  --color-bno-white: #fff;
+
+  /* STATES */
+  --color-focus: #692d2d;
+
+  /* Spacing sizes */
+  --spacing-general-module: 3em;
+  --spacing-general-module-sides: 2rem;
+  --spacing-general-between-modules: 6em;
+  --spacing-bno-button: 1em;
+}
+/************************/
+/* GENERAL STYLING BODY */
+/************************/
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+/******************************/
+/*  GENERAL STYLING ALL ELSE  */
+/******************************/
+
+* {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 1.4em;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 4em;
+  padding: 0.25em 0;
+}
+h3 {
+  font-size: 2em;
+  padding: 0.25em 0;
+}
+li {
+  list-style-type: none;
+}
+button {
+  /* buttons en inputs erven standaard de font-family en font-size niet */
+  /* dat moet je expliciet aangeven */
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/*****************************************/
+/* ACCESSIBILITY SKIP TO CONTENT STYLING */
+/*****************************************/
+.skip-to-content-link {
+  left: -1000em;
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.skip-to-content-link {
+  background: #e77e23;
+  height: 5emm;
+  left: -1000em;
+  padding: 0.5em;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+  left: 50%;
+}
+/*************************/
+/* LINK STATES & STYLING */
+/*************************/
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited {
+  /*color: var(--link-visited-dark-bg)*/
+}
+
+a:focus {
+  /* het is best een goed idee om de :focus van een link te laten opvallen */
+  /* als je met de tab-toets door een pagina gaat, zie je dan goed waar je elke keer geland bent */
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  outline-width: 2px;
+  outline-offset: 4px;
+  outline-style: solid;
+  filter: exclusion(100%);
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:active {
+  /* als alles lekker snel gaat zie je dit niet */
+  /* maar des te meer reden om de :active state wel te definieren */
+  /* juist als iets traag verloopt, krijg je dan feedback */
+  color: var(--link-active-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.bnoButton {
+  display: block;
+  width: fit-content;
+  background-color: var(--color-bno-black);
+  color: var(--color-link-dark-bg);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+  margin: var(--spacing-bno-button) 0;
+}
+
+bnoButton:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-bno-black);
+  background-color: var(--color-bno-white);
+  color: var(--color-bno-black);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+
+.bnoButtonOutlined {
+  display: block;
+  width: fit-content;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-bno-black);
+  color: var(--color-bno-black);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+bnoButtonOutlined:hover {
+  background-color: var(--color-bno-black);
+  color: var(--color-link-dark-bg);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+
+/*************/
+/* de button */
+/*************/
+/* BNO BUTTONS class overal, nog te vervangen selector */
+
+button {
+  min-height: 3em;
+  padding: 0 1em;
+  color: var(--color-bno-black);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-bno-black);
+
+  /* om het standaard randje bij focus niet te tonen */
+  outline: none;
+  /* nodig voor telefoons */
+  appearance: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: var(--color-bno-yellow);
+}
+
+button:active {
+  background-color: var(--color-bno-yellow);
+}
+
+/***********************/
+/*  NAVIGATION MODULE  */
+/***********************/
+
+/* MENU BALK BOVENIN */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header abbr {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1em;
+}
+
+header h1 {
+  flex-grow: 4;
+}
+
+header a {
+  flex-grow: 1;
+}
+
+header button {
+  flex-grow: 1;
+}
+
+/* MENU FOLDOUT */
+
+header nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+
+  background-color: var(--color-bno-black);
+
+  transform: translateY(-100%);
+
+  transition-duration: 0.4s;
+}
+
+header nav.open {
+  transform: translateY(0%);
+}
+
+header nav a {
+  color: var(--color-nav-link-light);
+}
+header nav h2 {
+  color: var(--color-nav-title-light);
+  font-size: 2em;
+}
+
+header nav li:nth-of-type(10) h2 {
+  font-size: 1em;
+}
+
+header nav button {
+  position: absolute;
+  top: 3em;
+  right: 3em;
+}
+
+/*media queries beginnen bij mobile*/
+
+.navigatie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "advies educatie agenda leden"
+    "jobs inspiratie nieuws bno"
+    "socials socials . taal";
+  margin: 0;
+  padding: 2.5em;
+}
+
+.navigatie ul {
+  margin: 0;
+  padding: 0;
+}
+
+.advies {
+  grid-area: advies;
+}
+
+.educatie {
+  grid-area: educatie;
+}
+
+.agenda {
+  grid-area: agenda;
+}
+
+.leden {
+  grid-area: leden;
+}
+
+.jobs {
+  grid-area: jobs;
+}
+
+.inspiratie {
+  grid-area: inspiratie;
+}
+
+.nieuws {
+  grid-area: nieuws;
+}
+
+.bno {
+  grid-area: bno;
+}
+
+.socials {
+  grid-area: socials;
+  align-items: center;
+  display: flex;
+}
+
+.socials ul {
+  display: flex;
+  gap: 2em;
+}
+
+.taal {
+  grid-area: taal;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.taal ul {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+/***********/
+/* FOOTER */
+/***********/
+
+footer {
+  background-color: var(--color-bno-black);
+}
+
+footer * {
+  color: var(--color-text-dark-bg);
+}
+
+/*****************/
+/*  HERO MODULE  */
+/*****************/
+
+section:nth-of-type(1) h2 {
+  color: var(--color-bno-black);
+  font-size: 7em;
+  max-width: 50%;
+}
+
+section:nth-of-type(1) h3 {
+  color: var(--color-bno-grey);
+  font-size: 3em;
+}
+
+/******************************/
+/*  TEAM MODULE  */
+/******************************/
+
+section:nth-of-type(2) li {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(2) h3 {
+  order: 3;
+}
+section:nth-of-type(2) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(2) img {
+  order: 1;
+}
+
+section:nth-of-type(2) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+/*hulp Eliran & Thomas*/
+@media (min-width: 1000px) {
+  section:nth-of-type(2) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+  }
+}
+/******************************/
+/*  EXTENDED TEAM MODULE  */
+/******************************/
+/*  FLOEPFLAPCSS CODE VAN SANNE  */
+section:nth-of-type(3) {
+  position: relative; /* zodat de button binnen de setcion blijft */
+}
+
+section:nth-of-type(3) button {
+  position: absolute; /* op een plek binnen de section */
+  top: 0;
+  right: 0;
+}
+
+section:nth-of-type(3) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 0; /* ingeklapt geen hoogte */
+  overflow: hidden; /* wat uitsteekt is verborgen */
+
+  transition: 0.3s; /* .3s is een mooie tijd - langer vinden mensen te traag */
+}
+
+section:nth-of-type(3).open ul {
+  max-height: 400vw; /* mikken dat dit de goede hoogte is voor jouw menu */
+
+  /*breedte bepalen met VW, 3x breedte komt ongevereen*/
+}
+
+section:nth-of-type(3) li {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(3) h3 {
+  order: 3;
+}
+section:nth-of-type(3) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(3) img {
+  order: 1;
+}
+
+section:nth-of-type(3) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+/*hulp Eliran & Thomas*/
+@media (min-width: 1000px) {
+  section:nth-of-type(3) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+  }
+}
+
+/******************************/
+/*  BESTUUR MODULE  */
+/******************************/
+
+section:nth-of-type(4) li {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(4) h3 {
+  order: 3;
+}
+section:nth-of-type(4) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(4) img {
+  order: 1;
+}
+
+section:nth-of-type(4) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+/*hulp Eliran & Thomas*/
+@media (min-width: 1000px) {
+  section:nth-of-type(4) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+  }
+}
+/******************************/
+/*  EXTENDED BESTUUR MODULE  */
+/******************************/
+/*  FLOEPFLAPCSS CODE VAN SANNE  */
+section:nth-of-type(5) {
+  position: relative; /* zodat de button binnen de setcion blijft */
+}
+
+section:nth-of-type(5) button {
+  position: absolute; /* op een plek binnen de section */
+  top: 0;
+  right: 0;
+}
+
+section:nth-of-type(5) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 0; /* ingeklapt geen hoogte */
+  overflow: hidden; /* wat uitsteekt is verborgen */
+
+  transition: 0.3s; /* .3s is een mooie tijd - langer vinden mensen te traag */
+}
+
+section:nth-of-type(5).open ul {
+  max-height: 400vw; /* mikken dat dit de goede hoogte is voor jouw menu */
+
+  /*breedte bepalen met VW, 3x breedte komt ongevereen*/
+}
+
+section:nth-of-type(5) li {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(5) h3 {
+  order: 3;
+}
+section:nth-of-type(5) p:nth-of-type(1) {
+  order: 4;
+}
+
+section:nth-of-type(5) img {
+  order: 1;
+}
+
+section:nth-of-type(5) p:nth-of-type(2) {
+  order: 2;
+  font-size: 1em;
+}
+/*hulp Eliran & Thomas*/
+@media (min-width: 1000px) {
+  section:nth-of-type(5) .card {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0;
+  }
+}
