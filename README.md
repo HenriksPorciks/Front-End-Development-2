@@ -69,7 +69,8 @@ Geselecteerde foto niet zichtbaar
 Geen foto ALT teksten
 Outline soms onvolledig
 
-#### IDEA: Skip to content for tabb
+#### IDEA
+ Skip to main content met tab
 
 
 #### Opgevallen
@@ -105,11 +106,13 @@ https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3
  
 #### Ging goed
  
- Semantisch en gestructureerde HTML schrijven
+ - Semantische HTML
+ - Gestructureerde HTML
  
 #### Ging minder goed
 
- De hoeveelheid code noodzakelijk voor deze website en Github werkend krijgen
+ - De hoeveelheid code noodzakelijk voor deze website
+ - Github werkend krijgen
  
 
 
@@ -134,7 +137,7 @@ https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3
  
 ### Verslag van meeting
 
-- <article> naar <ul><li> veranderen
+- ARTICLE's naar UL's en LI's veranderen
 - ALT image text niet vergeten
 - Verder uitwerken
 
@@ -155,11 +158,13 @@ https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3
  
 #### Ging goed
  
- Het maken van root colors en de juiste font grottes overal toepassen
+ - Het maken van root colors 
+ - Juiste font, font grottes overal toepassen
  
 #### Ging minder goed
 
- Veel moeite met flexbox en grid daadwerkelijk aan het werk te krijgen
+ - Veel moeite met flexbox en grid daadwerkelijk aan het werk te krijgen
+ - Github werkt nog steeds niet
  
 ### Screenshot(s)
  
