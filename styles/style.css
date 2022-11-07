@@ -22,6 +22,10 @@ margin: 0;
   /* GENERAL LINKS */
   --color-link-light-bg: #000;
   --color-link-dark-bg: #fff;
+  --link-visited-dark-bg: #f8bbd0;
+  --link-visited-light-bg: #c48b9f;
+  --link-light-bg: #fff;
+  --link-dark-bg: #000;
 
   /* NAVIGATION */
   --color-nav-link-light: #fff;
@@ -38,6 +42,12 @@ margin: 0;
 
   /* STATES */
   --color-focus: #692d2d;
+
+  /* Spacing sizes */
+  --spacing-general-module: 3em;
+  --spacing-general-module-sides: 2rem;
+  --spacing-general-between-modules: 6em;
+  --spacing-bno-button: 1em;
 }
 
 /************************/
@@ -49,63 +59,186 @@ body {
   background-color: var(--color-background);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 100%;
 }
 
 /******************************/
 /*  GENERAL STYLING ALL ELSE  */
 /******************************/
 
-section {
-  padding: 2em;
-  margin: 0;
-}
-p,
-h1,
-h2,
-h3,
-h4,
-abbr,
-a,
-time {
+* {
   font-family: "Inter Tight", sans-serif;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 p {
   font-size: 1.4em;
+  margin-bottom: 0.25em;
+}
+
+time {
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
 }
 h1 {
   font-size: 2.5em;
 }
 h2 {
   font-size: 4em;
+  padding: 0.25em 0;
 }
 h3 {
   font-size: 2em;
+  padding: 0.25em 0;
 }
-a {
-  color: var(--color-text);
-  text-decoration: none;
-}
-
 li {
   list-style-type: none;
 }
+button {
+  /* buttons en inputs erven standaard de font-family en font-size niet */
+  /* dat moet je expliciet aangeven */
+  font-family: inherit;
+  font-size: inherit;
+}
 
-/* BNO BUTTONS class overal, nog te vervangen selector */
+/*****************************************/
+/* ACCESSIBILITY SKIP TO CONTENT STYLING */
+/*****************************************/
+.skip-to-content-link {
+  left: -1000em;
+  position: absolute;
+  transform: translateY(-100%);
+}
 
+.skip-to-content-link {
+  background: var(--color-bno-red);
+  height: 5emm;
+  left: -1000em;
+  padding: 0.5em;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+  left: 50%;
+}
+
+/*************************/
+/* LINK STATES & STYLING */
+/*************************/
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited {
+  /*color: var(--link-visited-dark-bg)*/
+}
+
+a:focus {
+  /* het is best een goed idee om de :focus van een link te laten opvallen */
+  /* als je met de tab-toets door een pagina gaat, zie je dan goed waar je elke keer geland bent */
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  outline-width: 2px;
+  outline-offset: 4px;
+  outline-style: solid;
+  filter: exclusion(100%);
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:active {
+  /* als alles lekker snel gaat zie je dit niet */
+  /* maar des te meer reden om de :active state wel te definieren */
+  /* juist als iets traag verloopt, krijg je dan feedback */
+  color: var(--link-active-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+/****************************/
+/* BUTTONS AND LINK STYLING */
+/****************************/
 .bnoButton {
+  display: block;
+  width: fit-content;
   background-color: var(--color-bno-black);
   color: var(--color-link-dark-bg);
   padding: 0.5em 1.5em;
   font-size: 2em;
+  margin: var(--spacing-bno-button) 0;
 }
+
+bnoButton:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-bno-black);
+  background-color: var(--color-bno-white);
+  color: var(--color-bno-black);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+
 .bnoButtonOutlined {
+  display: block;
+  width: fit-content;
   border-style: solid;
   border-width: 1px;
   border-color: var(--color-bno-black);
   color: var(--color-bno-black);
   padding: 0.5em 1.5em;
   font-size: 2em;
+}
+bnoButtonOutlined:hover {
+  background-color: var(--color-bno-black);
+  color: var(--color-link-dark-bg);
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+
+button {
+  min-height: 3em;
+  padding: 0 1em;
+  color: var(--color-bno-black);
+  border-style: none;
+  /* om het standaard randje bij focus niet te tonen */
+  outline: none;
+  /* nodig voor telefoons */
+  appearance: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: var(--color-bno-red);
+}
+
+button:active {
+  background-color: var(--color-bno-red);
 }
 
 /***********************/
@@ -177,21 +310,7 @@ header nav button {
   right: 3em;
 }
 
-/*media queries beginnen bij mobile*/
-
-.navigatie {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1em;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "advies educatie agenda leden"
-    "jobs inspiratie nieuws bno"
-    "socials socials . taal";
-  margin: 0;
-  padding: 2.5em;
-}
+/*Grid area's met classes*/
 
 .navigatie ul {
   margin: 0;
@@ -254,6 +373,91 @@ header nav button {
   align-items: center;
 }
 
+/* GRID 4 x 4 */
+
+@media (min-width: 750px) {
+  .navigatie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "advies educatie agenda leden"
+      "jobs inspiratie nieuws bno"
+      "socials socials . taal";
+    margin: 0;
+    padding: 2.5em;
+  }
+}
+
+/* GRID 3 x 5 */
+
+@media (max-width: 750px) {
+  .navigatie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    grid-template-areas:
+      "advies educatie agenda"
+      "leden jobs inspiratie"
+      "nieuws bno ."
+      "socials socials socials"
+      "taal taal taal";
+    margin: 0;
+    padding: 2.5em;
+  }
+}
+
+/* GRID 2 x 6 */
+@media (max-width: 500px) {
+  .navigatie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.3fr 1.3fr 1.3fr 1.3fr 0.4fr 0.4fr;
+    gap: 1em;
+    grid-template-areas:
+      "advies educatie"
+      "agenda leden"
+      "jobs inspiratie"
+      "nieuws bno"
+      "socials socials"
+      "taal taal";
+    margin: 0;
+    padding: 2.5em;
+  }
+
+  .socials ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    margin-top: 2em;
+  }
+}
+/* GRID 1 x 10 */
+@media (max-width: 350px) {
+  .navigatie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    grid-template-areas:
+      "advies"
+      "educatie"
+      "agenda"
+      "leden"
+      "jobs"
+      "inspiratie"
+      "nieuws"
+      "bno"
+      "socials"
+      "taal";
+    margin: 0;
+    padding: 2.5em;
+  }
+}
+
 /***********/
 /* FOOTER */
 /***********/
@@ -266,208 +470,75 @@ footer * {
   color: var(--color-text-dark-bg);
 }
 
-/*****************/
-/*  HERO MODULE  */
-/*****************/
-
-section:nth-of-type(1) {
-  background-image: URL("https://www.bno.nl/web/image/62472-8ae0c45b/Rogier-Roeters-Start_4-diap-1920x1080px.jpg");
-}
-
-section:nth-of-type(1) h2 {
-  color: var(--color-bno-white);
-  font-size: 7em;
-  max-width: 50%;
-}
-
-section:nth-of-type(1) abbr {
-  color: var(--color-bno-white);
-  font-size: 2.5em;
-  text-decoration: none;
-}
-
-/*****************************/
-/*  HIGHLIGHTED NEWS MODULE  */
-/*****************************/
-
-section:nth-of-type(2) {
-  display: flex;
-  flex-direction: column;
-  /*Double check if there is no other way*/
-  row-gap: 2em;
-}
-
-section:nth-of-type(2) h3 {
-  order: 2;
-  font-size: 3.5em;
-}
-
-section:nth-of-type(2) p:nth-of-type(1) {
-  order: 3;
-}
-
-section:nth-of-type(2) p:nth-of-type(2) {
-  order: 1;
-  font-size: 1em;
-}
-
-section:nth-of-type(2) img {
-  order: 5;
-}
-
-section:nth-of-type(2) a {
-  order: 4;
-  max-width: 8ch;
-}
-
-/*****************/
-/*  NEWS MODULE  */
-/*****************/
-
-section:nth-of-type(3) li {
-  display: flex;
-  flex-direction: column;
-  /*Double check if there is no other way*/
-  row-gap: 2em;
-}
-
-section:nth-of-type(3) h3 {
-  order: 3;
-}
-
-section:nth-of-type(3) p:nth-of-type(1) {
-  order: 4;
-}
-
-section:nth-of-type(3) img {
-  order: 2;
-}
-
-section:nth-of-type(3) p:nth-of-type(2) {
-  order: 1;
-}
-
-/*******************/
-/*  EVENTS MODULE  */
-/*******************/
-
-/* SECTION EVENTS */
-section:nth-of-type(5) {
-  background-color: var(--color-bno-purple);
-}
-
-section:nth-of-type(5) li {
-  background-color: var(--color-background);
-  display: flex;
-  flex-direction: column;
-}
-
-section:nth-of-type(5) h3 {
-  order: 3;
-  font-size: 3em;
-}
-
-section:nth-of-type(5) time {
-  order: 4;
+footer h2 {
   font-size: 2em;
-}
-section:nth-of-type(5) p:nth-of-type(1) {
-  order: 5;
-  font-size: 1em;
+  color: var(--color-nav-title-light);
 }
 
-section:nth-of-type(5) img {
-  order: 1;
+.join h2 {
+  font-size: 4em;
+  color: var(--color-nav-link-light);
 }
 
-section:nth-of-type(5) p:nth-of-type(2) {
-  order: 2;
-  font-size: 1em;
+.footer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 0.5fr;
+  grid-gap: 2em;
+  padding: 2em;
+  grid-template-areas:
+    "join join footerLinks footerSocials"
+    "join join adres contact"
+    "join join madeBy madeBy";
 }
-
-/*********************/
-/*  ARTICLES MODULE  */
-/*********************/
-
-section:nth-of-type(6) li {
-  display: flex;
-  flex-direction: column;
+.join {
+  grid-area: join;
 }
-
-section:nth-of-type(6) h3 {
-  order: 3;
+.adres {
+  grid-area: adres;
 }
-section:nth-of-type(6) p:nth-of-type(1) {
-  order: 4;
+.contact {
+  grid-area: contact;
 }
-
-section:nth-of-type(6) img {
-  order: 1;
+.footerSocials {
+  grid-area: footerSocials;
 }
-
-section:nth-of-type(6) p:nth-of-type(2) {
-  order: 2;
-  font-size: 1em;
+.footerLinks {
+  grid-area: footerLinks;
 }
-
-/***********************/
-/*  STAY TUNED MODULE  */
-/***********************/
-
-section:nth-of-type(9) {
-  background-color: var(--color-accent-grey);
+.madeBy {
+  grid-area: madeBy;
 }
-
-/***************************/
-/*  SHOW YOUR WORK MODULE  */
-/***************************/
-
-section:nth-of-type(11) {
-  background-image: URL("https://www.bno.nl/web/image/63652-54a69a15/Work-Show-NorthernLight-Homepage.jpg");
+.join abbr {
+  font-weight: 500;
+  font-size: 4em;
+  text-decoration: none;
+  white-space: normal;
 }
-
-/********************/
-/*  DD JOBS MODULE  */
-/********************/
-
-section:nth-of-type(10) {
-  background-color: var(--color-bno-yellow);
+.contact a {
+  display: block;
+  white-space: nowrap;
 }
-
-section:nth-of-type(10) li {
-  background-color: var(--color-background);
-  display: flex;
-  flex-direction: column;
-  /*Double check if there is no other way*/
-  row-gap: 2em;
+.adres a {
+  display: block;
+  white-space: nowrap;
 }
-
-section:nth-of-type(10) h3 {
-  order: 3;
-}
-section:nth-of-type(10) h4 {
-  order: 4;
-}
-
-section:nth-of-type(10) time {
-  order: 5;
-}
-section:nth-of-type(10) p:nth-of-type(1) {
-  order: 6;
-}
-
-section:nth-of-type(10) img {
-  order: 1;
-}
-
-section:nth-of-type(10) p:nth-of-type(2) {
-  order: 2;
-}
-
-/*************************/
-/*  DUTCH DESIGN MODULE  */
-/*************************/
-
-section:nth-of-type(11) {
-  background-image: URL("https://www.bno.nl/web/image/45581-4003e2c3/Dd%20Yearbook%20%2721_website_boek%20links_1920%20x%20860.jpg");
+/* BELOW 1100px */
+@media (max-width: 1100px) {
+  .footer {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.3fr 0.2fr;
+    grid-gap: 2em;
+    padding: 2em;
+    grid-template-areas:
+      "join join"
+      "footerLinks footerSocials"
+      "adres contact"
+      "madeBy madeBy";
+  }
 }
