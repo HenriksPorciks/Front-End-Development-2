@@ -1,23 +1,23 @@
-# Procesverslag
+# Procesverslag FED2 2022/2023 Henriks Porciks INH02
 
 <details open>
-<summary>Henriks Porciks</summary>
+<summary>Henriks Porciks FED2</summary>
 
 ### Auteur:
 Henriks Porciks
 
-#### Je startniveau:
+#### Startniveau:
 Rood, wellicht Blauw na enkele lessen
 
-#### Je focus:
-Focus op Responsive 
+#### Focus:
+Responsive 
 </details>
 
 
 
 
 
-## Je website
+## Website voor FED2
 
 <details>
 <summary>BNO Website</summary>
