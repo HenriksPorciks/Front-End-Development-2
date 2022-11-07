@@ -90,7 +90,7 @@ Outline soms onvolledig
 Darkmode afwezig
 
 </details>
-
+</details>
 
 
 
