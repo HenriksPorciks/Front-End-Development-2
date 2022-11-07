@@ -102,7 +102,15 @@ https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3
 <summary>Week 2</summary>
 
 ### Stand van zaken
-Nog moeite met de hoeveelheid code, maar vooral focus op semantiek
+ 
+#### Ging goed
+ 
+ Semantisch en gestructureerde HTML schrijven
+ 
+#### Ging minder goed
+
+ De hoeveelheid code noodzakelijk voor deze website en Github werkend krijgen
+ 
 
 
 ### Agenda voor meeting
