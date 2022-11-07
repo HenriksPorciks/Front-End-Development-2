@@ -28,7 +28,7 @@ Landingspagina + een Iteratie op Over Ons
 
 ##### Screenshot(s) van de BNO Landingspagina (small screen): 
 
-<img src="images/www.bno.nl_.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/BREAKDOWN%20SCHETS.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de  BNO Over Ons (small screen):
 
