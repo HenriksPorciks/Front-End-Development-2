@@ -19,7 +19,7 @@ Focus op Responsive
 
 ## Je website
 
-<details open>
+<details>
 <summary>BNO Website</summary>
 
 ### BNO - Beroepsorganisatie Nederlandse Ontwerpers
@@ -105,17 +105,22 @@ https://www.figma.com/file/0rUA2cLfqf5cGqefEOSDLT/Front-End-Template?node-id=0%3
 Nog moeite met de hoeveelheid code, maar vooral focus op semantiek
 
 
-#### Agenda voor meeting
+### Agenda voor meeting
 
- Henriks | De vertaalslag van breakdownschets naar HTML
+#### Henriks
+De vertaalslag van breakdownschets naar HTML
 
- Giorgio | Vertaalslag van breakdownschets naar HTML
+#### Giorgio
+ Vertaalslag van breakdownschets naar HTML
 
- Nathan | HTML code
+#### Nathan
+ HTML code
  
- Jesse | HTML code en breakdownschets
+#### Jesse
+ HTML code en breakdownschets
 
- Emilio | Breakdownschets
+ Emilio
+ Breakdownschets
  
  
 ### Verslag van meeting
@@ -142,13 +147,18 @@ Het maken van root colors en de juiste font grottes overal toepassen, veel moeit
 
 #### Agenda voor meeting
 
- Henriks | GRID en FLEXBOX, m.b.t responsiveness van bepaalde onderdelen van de website, het wilt niet lukken
+#### Henriks
+ GRID en FLEXBOX, m.b.t responsiveness van bepaalde onderdelen van de website, het wilt niet lukken
 
- Giorgio |Ik wil alleen mijn HTML en CSS bespreken, vooral over de breakpoints en hoe je het goed responsive krijgt.
+#### Giorgio
+ Ik wil alleen mijn HTML en CSS bespreken, vooral over de breakpoints en hoe je het goed responsive krijgt.
 
- Nathan Stuger | afwezig
+#### Nathan Stuger
+ Afwezig
  
- Jesse | CSS en JS interactie
+#### Jesse
+ 
+ CSS en JS interactie
 
 
 
@@ -216,24 +226,22 @@ Volgorde met Flex gedaan, maar twijfels of ik toch niet GRID moet gebruiken
 
 ### Agenda voor meeting
 
-| Jesse [SERVICE]
-De CSS van de tweede pagina
-Wat JS 
+#### Jesse [SERVICE]
+- De CSS van de tweede pagina
+- Wat JS 
 
-| Emilio [SERVICE]
-Footer: CSS - Label & Input
-Animeren Button
+#### Emilio [SERVICE]
+- Footer: CSS - Label & Input
+- Animeren Button
 
+#### Giorgio [RESPONSIVE]
+- Responsiveness
 
-
-| Giorgio [RESPONSIVE]
-Responsiveness
-
-| Henriks [RESPONSIVE]
-Media queries
-Onverwachte spacing/padding/margin
-Twee losse CSS bestanden
-Javascript gedrag, menu niet overlay, maar content push-down
+#### Henriks [RESPONSIVE]
+- Media queries
+-Onverwachte spacing/padding/margin
+- Twee losse CSS bestanden
+- Javascript gedrag, menu niet overlay, maar content push-down
 
 
 ### Verslag van meeting
