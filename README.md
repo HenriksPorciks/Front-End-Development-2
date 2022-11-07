@@ -108,19 +108,20 @@ Nog moeite met de hoeveelheid code, maar vooral focus op semantiek
 ### Agenda voor meeting
 
 #### Henriks
-De vertaalslag van breakdownschets naar HTML
+- De vertaalslag van breakdownschets naar HTML
 
 #### Giorgio
- Vertaalslag van breakdownschets naar HTML
+- Vertaalslag van breakdownschets naar HTML
 
 #### Nathan
- HTML code
+- HTML code
  
 #### Jesse
- HTML code en breakdownschets
+- HTML code
+- Breakdownschets
 
- Emilio
- Breakdownschets
+#### Emilio
+-  Breakdownschets
  
  
 ### Verslag van meeting
@@ -141,8 +142,20 @@ De vertaalslag van breakdownschets naar HTML
 <details>
 <summary>Week 3</summary>
 
+
 ### Stand van zaken
-Het maken van root colors en de juiste font grottes overal toepassen, veel moeite met flexbox en grid daadwerkelijk aan het werk te krijgen 
+ 
+#### Ging goed
+ 
+ Het maken van root colors en de juiste font grottes overal toepassen
+ 
+#### Ging minder goed
+
+ Veel moeite met flexbox en grid daadwerkelijk aan het werk te krijgen
+ 
+### Screenshot(s)
+ 
+ 
 
 
 #### Agenda voor meeting
@@ -174,10 +187,10 @@ Het maken van root colors en de juiste font grottes overal toepassen, veel moeit
 
 
 
-## Toegankelijkheidstest (week 4)
+## Toegankelijkheidstest
 
 <details>
-<summary>uitwerken na test in 8e voortgang</summary>
+<summary>Week 4</summary>
 
 ### Bevindingen
 
@@ -210,10 +223,10 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 
 
-## Voortgang 3 (week 4)
+## Voortgang 3
 
 <details>
-<summary>uitwerken voor 3e voortgang</summary>
+<summary>Week 4</summary>
 
 ### Stand van zaken
 
@@ -258,17 +271,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
 
-## Eindgesprek (week 5)
+## Eindgesprek
 
 <details>
-<summary>uitwerken voor eindgesprek</summary>
+<summary>Week 5</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ 
+#### Ging goed
+ 
+#### Ging minder goed
 
 ### Screenshot(s)
-
-hier screenshot(s) van je eindresultaat
 
 </details>
 
